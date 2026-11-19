@@ -29,6 +29,7 @@ export default function Home() {
     <a href="#builders">Builders of Tomorrow</a>
     <a href="#watch">Watch</a>
     <a href="#partners">Partners</a>
+    <a className="btn btn--small" href="https://in.bookmyshow.com/events/littlepreneurs-christmas-edition-kids-market/ET00525705" target="_blank" rel="noopener">Get Ticket</a>
     {EVENT.showRegisterButtons && <Link className="btn btn--small" href="/littlepreneurs/register">Register</Link>}
   </nav>
   <button className="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
@@ -307,10 +308,6 @@ export default function Home() {
       </ul>
     </div>
 
-    <div className="partner-cta">
-      <p className="partner-cta__text">Want your school, brand or business on this list?</p>
-      <a className="btn" href={`https://wa.me/${EVENT.contact.whatsapp}?text=${encodeURIComponent("Hi! I'd like to partner with Littlepreneurs Season 02 as a school / brand / sponsor.")}`} target="_blank" rel="noopener">Partner with us on WhatsApp</a>
-    </div>
   </div>
 </section>
 
@@ -357,43 +354,6 @@ export default function Home() {
 {/* BOOKING */}
 <section className="section section--book" id="book">
   <div className="wrap">
-    <span className="pill pill--dark">Season 02</span>
-    <h2>A table for their ideas.<br />A moment they’ll own.</h2>
-
-    <div className="book">
-      <div className="book__prices">
-        <p className="eyebrow">1 child / 1 table</p>
-        <p className="price">₹8,000</p>
-        <p className="muted">Per child, per table</p>
-        <hr />
-        <p className="eyebrow">2 children / 1 shared table</p>
-        <p className="price">₹10,000</p>
-        <p className="muted">Total for two children</p>
-        <span className="pill pill--yellow">Same category only</span>
-        <p className="muted small">Both children must be in the same category.</p>
-        <p className="limited">Limited slots only</p>
-      </div>
-      <div className="book__qr">
-        <p>Scan to book</p>
-        <img src="/assets/img/booking-qr.webp" alt="PhonePe QR code to book a table. Payee: Vasundhara Holdings" width="440" height="440" loading="lazy" />
-        <small>Payee</small>
-        <strong>Vasundhara Holdings</strong>
-        <div className="book__queries">
-          <small>For queries</small>
-          <p>
-            <strong>Priyanjana</strong> · Founder, Late Checkout
-            <br />
-            <a href="tel:+919618882124">96188 82124</a>
-          </p>
-          <p>
-            <strong>Deepa</strong> · Founder, Dolce Amore
-            <br />
-            <a href="tel:+919030015909">90300 15909</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
     {EVENT.showRegisterButtons && (
       <div className="book__cta">
         <p className="eyebrow">Already paid, or visiting on the day?</p>
@@ -407,6 +367,14 @@ export default function Home() {
     <div className="eventbar">
       <strong>20 December</strong><strong>T-Works</strong><strong>12–5 PM</strong>
       <span>Ages 4–16 &nbsp;/&nbsp; Parents welcome at the stall</span>
+    </div>
+
+    <div className="partner-cta">
+      <p className="partner-cta__text">Want your school, brand or business to partner with us?</p>
+      <div className="partner-cta__actions">
+        <a className="btn" href={`https://wa.me/${EVENT.contact.whatsapp}?text=${encodeURIComponent("Hi! I'd like to partner with Littlepreneurs Season 02 as a school / brand / sponsor.")}`} target="_blank" rel="noopener">Contact us on WhatsApp</a>
+        <a className="btn btn--yellow" href="https://in.bookmyshow.com/events/littlepreneurs-christmas-edition-kids-market/ET00525705" target="_blank" rel="noopener">Get your tickets now</a>
+      </div>
     </div>
 
     <div className="handles">
