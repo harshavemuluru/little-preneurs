@@ -370,10 +370,12 @@ export default function Home() {
     </div>
 
     <div className="partner-cta">
-      <p className="partner-cta__text">Want your school, brand or business to partner with us?</p>
-      <div className="partner-cta__actions">
+      <div className="partner-cta__row">
+        <p className="partner-cta__text">Want your school, brand or business to partner with us?</p>
         <a className="btn" href={`https://wa.me/${EVENT.contact.whatsapp}?text=${encodeURIComponent("Hi! I'd like to partner with Littlepreneurs Season 02 as a school / brand / sponsor.")}`} target="_blank" rel="noopener">Contact us on WhatsApp</a>
-        <span className="partner-cta__divider">To visit Littlepreneurs</span>
+      </div>
+      <div className="partner-cta__row">
+        <p className="partner-cta__text">To visit Littlepreneurs</p>
         <a className="btn btn--yellow" href="https://in.bookmyshow.com/events/littlepreneurs-christmas-edition-kids-market/ET00525705" target="_blank" rel="noopener">Get your tickets now</a>
       </div>
     </div>
